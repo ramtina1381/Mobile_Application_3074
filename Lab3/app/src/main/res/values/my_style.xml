@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/ugly_green</item>
+    </style>
+    <style name="GreenText.Large">
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="BlueButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@color/blue</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>
