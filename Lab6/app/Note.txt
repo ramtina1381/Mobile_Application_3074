@@ -1,0 +1,8 @@
+There are three types of sensors:
+    1- Motion sensors:
+        These are used to measure acceleration forces and rotational forces along with three axes
+    2- Position Sensors:
+        These are used to measure the physical position of the device
+    3- Environmental sensors:
+        These are used to measure the environmental changes like temperature or humidity etc
+

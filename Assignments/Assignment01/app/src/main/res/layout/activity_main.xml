@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="No of Hours"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Hourly Rate"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/regularHoursPay"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Regular Hours Pay: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/regularPay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/overtimeHoursPay"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Overtime Hours Pay:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/overtimePay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Tax Amount:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/taxAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalHoursPay"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Total Pay: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalPay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

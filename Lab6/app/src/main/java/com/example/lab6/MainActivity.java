@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Second: Initialize the sensor manager and list view
-        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         list = findViewById(R.id.list);
 
         // Fourth: Initialize output text view

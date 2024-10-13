@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        simpleListView = (ListView) findViewById(R.id.simpleListView);
+        simpleListView = (ListView)findViewById(R.id.simpleListView);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
                 R.layout.item_view, R.id.itemTextView, courseList);
