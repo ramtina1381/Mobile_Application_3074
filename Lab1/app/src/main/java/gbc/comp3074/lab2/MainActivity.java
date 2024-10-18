@@ -16,13 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
         Log.d("Lab2", "I am alive and in onCreate");
-
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView name = findViewById(R.id.name);
+        name.setText(R.string.your_name);
+
 //        name.setText(R.string.app_name);
         name.setAllCaps(true);
 

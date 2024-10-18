@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/your_name"
         android:textAlignment="center"
         android:textSize="48sp" />
 
@@ -30,8 +29,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="269dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/button_label"
         android:textSize="34sp" />
